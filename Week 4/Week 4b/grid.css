@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 30px;
+}
+[class ^= "box-"] {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    box-shadow: o 0 5px rgb(o, 0, 0, .1,);
+    color: #fff;
+}
+body{
+    background: darkslategray;
+    height: 100vh;
+}
+button{
+    color: black;
+    background: white;
+    padding: 2px 8px;
+    top: 0;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: rgb(251, 255, 0);
+    color: black;
+}
+.grid{
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+    
+    "h h h h  h h h h  a a a a "
+    "h h h h  h h h h  a a a a "
+    "h h h h  h h h h  a a a a "
+    "m m m m  m m b b  b b b b "
+    "m m m m  m m b b  b b b b "
+    "m m m m  m m s s  s s s s "
+    "m m m m  m m s s  s s s s ";
+}
+.grid .box-1 {
+    grid-area: h;
+    background-color: red;
+}
+.grid .box-2 {
+    grid-area: a;
+    background-color: orange;
+}
+.grid .box-3 {
+    grid-area: m;
+    background-color: green;
+}
+.grid .box-4 {
+    grid-area: b;
+    background-color: blue;
+}
+.grid .box-5 {
+    grid-area: s;
+    background-color: blue;
+}   
+@media (min-width: 768px) {
+    .grid{
+        height: 90vh;
+        width: 90%;
+        margin: 20px auto;
+    
+        display: grid;
+        gap: 20px;
+    
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+        
+        "h h h h  h h h h  a a a a "
+        "h h h h  h h h h  a a a a "
+        "h h h h  h h h h  a a a a "
+        "m m m m  m m b b  b b b b "
+        "m m m m  m m b b  b b b b "
+        "m m m m  m m s s  s s s s "
+        "m m m m  m m s s  s s s s ";
+    }
+    .grid .box-1 {
+        grid-area: h;
+    }
+    .grid .box-2 {
+        grid-area: a;
+    }
+    .grid .box-3 {
+        grid-area: m;
+    }
+    .grid .box-4 {
+        grid-area: b;
+    }
+    .grid .box-5 {
+        grid-area: s;
+    }   
+}
+@media(min-width :1080px) {
+    .grid{
+        height: 90vh;
+        width: 90%;
+        margin: 20px auto;
+    
+        display: grid;
+        gap: 20px;
+    
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+        
+        "h h h h  h h h h  a a a a "
+        "h h h h  h h h h  a a a a "
+        "h h h h  h h h h  a a a a "
+        "m m m m  m m b b  b b b b "
+        "m m m m  m m b b  b b b b "
+        "m m m m  m m s s  s s s s "
+        "m m m m  m m s s  s s s s ";
+    }
+    .grid .box-1 {
+        grid-area: h;
+    }
+    .grid .box-2 {
+        grid-area: a;
+    }
+    .grid .box-3 {
+        grid-area: m;
+    }
+    .grid .box-4 {
+        grid-area: b;
+    }
+    .grid .box-5 {
+        grid-area: s;
+    }    
+}
